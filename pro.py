@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("BigDataProject").getOrCreate()
 
 # Read dataset
-df = spark.read.csv("data/sales_sample.csv", header=True, inferSchema=True)
+df = spark.read.csv("sample.csv", header=True, inferSchema=True)
 
 # Show data
 df.show()
